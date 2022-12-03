@@ -10,12 +10,13 @@
 <body>
     <h1>Profit and Loss Calculator</h1>
     <main>
-        <label for="">Initial Price  <input type="text" placeholder="Enter the initial price here"/></label>
+        <label for="initial-price">Initial Price  <input type="text"  id="initial-price" placeholder="Enter the initial price here"/></label>
        
-        <label for="">Quantity of Stocks <input type="text place" placeholder="Enter the Number of Stocks you bought"/></label>
+        <label for="stocks-quantity">Quantity of Stocks <input type="text" id="stocks-quantity" placeholder="Enter the Number of Stocks you bought"/></label>
         
-        <label for="">Current Price <input type="text" placeholder="Enter the current price of stocks"/></label>
-        <button>Tell Me!!</button>
+        <label for="current-price">Current Price <input type="text"id="current-price" placeholder="Enter the current price of stocks"/></label>
+        <button id="submit-btn">Tell Me!!</button>
+        <div id="output"></div>
         
     </main>
     <script src="/app.js"></script>
