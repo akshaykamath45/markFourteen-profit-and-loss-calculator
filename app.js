@@ -5,6 +5,12 @@ var currentPrice=document.querySelector('#current-price');
 var submitButton=document.querySelector('#submit-btn')
 var output=document.querySelector('#output');
 
+function submitHandler(){
+    var ip=initialPrice.value;
+    var qty=qunatityOfStocks.value;
+    var curr=currentPrice.value;
+    calculateProfitandLoss(ip,qty,curr);
+}
 function calculateProfitandLoss(initial,quantity,current){
     if(initial>current){
         //loss logic
@@ -21,4 +27,4 @@ function calculateProfitandLoss(initial,quantity,current){
         console.log("No Profit,No Less");
     }
 }
-calculateProfitandLoss(10,10,100)
+submitButton.addEventListener('click',submitHandler)
