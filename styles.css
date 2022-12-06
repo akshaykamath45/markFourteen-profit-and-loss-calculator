@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root{
-    --primary-color:#7C3AED;
+    --primary-color:#007FFF;
     --dark-gray:#6B7280;
     --off-white:#F3F4F6;
 }
@@ -17,7 +17,7 @@ h1{
 }
 label{
     text-align: center;
-    color: #7C3AED;
+    color: var(--primary-color);
     font-size: 2rem;
     display: block;
     
